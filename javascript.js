@@ -1,5 +1,5 @@
 var screen=document.getElementById('screen');
-
+screen.value="just calculate!!";
 function btnClick(value){
     screen.value+=value;
 }
