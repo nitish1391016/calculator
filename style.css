@@ -66,6 +66,7 @@ p{
 @media(max-width:767px){
     #screen {
         width: 287px;
+        color: black;
     }
     .button {
         width: 57px;
