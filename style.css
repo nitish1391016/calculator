@@ -69,7 +69,9 @@ p{
     }
 
     .container{
-        padding-bottom: 15px;
+        padding-bottom: 15px;        
+        width: 377px;
+        margin: auto;
     }
     .button:hover{
         border: 2px solid yellow;
