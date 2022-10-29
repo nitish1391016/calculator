@@ -8,15 +8,24 @@
     <title>calculator</title>
 </head>
 <body>
+    <!-- dom tree
+        container
+            ->top
+                ->casio
+                ->screen
+            ->bottom
+                buttons...
+     -->
     <div class="container">
         <div class="top">
             <div class="casio"><p>casio</p></div>
             <input type="text" id="screenvalue" class="screen">
         </div>
         <div class="bottom">
+            <!-- each button contains given a value thus it goes to btnClick() as arguement when it is clicked -->
                 <button class="number" value="7" onclick="btnClick(value)">7</button>
-                <button class="number" value="8" onclick="btnClick(value)">8</button>
                 <button class="number" value="9" onclick="btnClick(value)">9</button>
+                <button class="number" value="8" onclick="btnClick(value)">8</button>
                 <button class="operator" value="/" onclick="btnClick(value)">/</button>
                 <button class="number" value="4" onclick="btnClick(value)">4</button>
                 <button class="number" value="5" onclick="btnClick(value)">5</button>
@@ -26,8 +35,10 @@
                 <button class="number" value="2" onclick="btnClick(value)">2</button>
                 <button class="number" value="3" onclick="btnClick(value)">3</button>
                 <button class="operator" value="+" onclick="btnClick(value)">+</button>
+                <!-- clear fuction is called here -->
                 <button class="clear" value="C" onclick="clean()">C</button>
                 <button class="number" value="0" onclick="btnClick(value)">0</button>
+                <!-- result eval() called indirectly to evaluate result -->
                 <button class="number" value="=" onclick="result()">=</button>
                 <button class="operator" value="-" onclick="btnClick(value)">-</button>
         </div>
