@@ -3,7 +3,6 @@ var screen=document.getElementById('screenvalue');
 function myMessage() {
   }
 function btnClick(val){
-    
     screen.value+=val;
 }
 
