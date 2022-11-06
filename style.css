@@ -13,6 +13,7 @@
 }
 #whole{
     background-color: rgb(var(--r), var(--g), var(--b));
+    /* background-color: gre; */
 }
 .container{
     width: 361px;
