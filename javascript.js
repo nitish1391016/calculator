@@ -9,18 +9,28 @@ function btnClick(val){//only for when numbers clicked
 function result(){//when '=' clicked
 
     try{
-        bgColor.style.setProperty("--r",0);
-        bgColor.style.setProperty("--g",137);
-        bgColor.style.setProperty("--b",0);
-
+        green();
         screen.value=eval(screen.value);
     }
     catch(e){
-        bgColor.style.setProperty("--r",137);
-        bgColor.style.setProperty("--g",0);
-        bgColor.style.setProperty("--b",0);
+        red();
         screen.value="";
     }
+    if(result.value=="" || result.value==undefined)
+        red();
+}
+
+function green(){
+    bgColor.style.setProperty("--r",0);
+    bgColor.style.setProperty("--g",137);
+    bgColor.style.setProperty("--b",0);
+
+}
+
+function red(){
+    bgColor.style.setProperty("--r",137);
+    bgColor.style.setProperty("--g",0);
+    bgColor.style.setProperty("--b",0);
 }
 
 function clean(){//when 'c' clicked
