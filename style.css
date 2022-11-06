@@ -11,6 +11,9 @@
     
     user-select: none;
 }
+#whole{
+    background-color: rgb(var(--r), var(--g), var(--b));
+}
 .container{
     width: 361px;
     height: 494px;
