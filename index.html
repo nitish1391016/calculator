@@ -23,24 +23,24 @@
         </div>
         <div class="bottom">
             <!-- each button contains given a value thus it goes to btnClick() as arguement when it is clicked -->
-                <button class="number" value="7" onclick="btnClick(value)">7</button>
-                <button class="number" value="9" onclick="btnClick(value)">9</button>
-                <button class="number" value="8" onclick="btnClick(value)">8</button>
-                <button class="operator" value="/" onclick="btnClick(value)">/</button>
-                <button class="number" value="4" onclick="btnClick(value)">4</button>
-                <button class="number" value="5" onclick="btnClick(value)">5</button>
-                <button class="number" value="6" onclick="btnClick(value)">6</button>
-                <button class="operator" value="*" onclick="btnClick(value)">*</button>
-                <button class="number" value="1" onclick="btnClick(value)">1</button>
-                <button class="number" value="2" onclick="btnClick(value)">2</button>
-                <button class="number" value="3" onclick="btnClick(value)">3</button>
-                <button class="operator" value="+" onclick="btnClick(value)">+</button>
-                <!-- clear fuction is called here -->
-                <button class="clear" value="C" onclick="clean()">C</button>
-                <button class="number" value="0" onclick="btnClick(value)">0</button>
-                <!-- result eval() called indirectly to evaluate result -->
-                <button class="number" value="=" onclick="result()">=</button>
-                <button class="operator" value="-" onclick="btnClick(value)">-</button>
+                <button id="sham" class="btn number" value="7" onclick="btnClick(value)"><span>7</span></button>
+                <button id="sham" class="btn number" value="9" onclick="btnClick(value)"><span>9</span></button>
+                <button id="sham" class="btn number" value="8" onclick="btnClick(value)"><span>8</span></button> 
+                <button id="sham" class="btn operator" value="/" onclick="btnClick(value)"><span>/</span></button>
+                <button id="sham" class="btn number" value="4" onclick="btnClick(value)"><span>4</span></button>
+                <button id="sham" class="btn number" value="5" onclick="btnClick(value)"><span>5</span></button>
+                <button id="sham" class="btn number" value="6" onclick="btnClick(value)"><span>6</span></button>
+                <button id="sham" class="btn operator" value="*" onclick="btnClick(value)"><span>*</span></button>
+                <button id="sham" class="btn number" value="1" onclick="btnClick(value)"><span>1</span></button>
+                <button id="sham" class="btn number" value="2" onclick="btnClick(value)"><span>2</span></button>
+                <button id="sham" class="btn number" value="3" onclick="btnClick(value)"><span>3</span></button>
+                <button id="sham" class="btn operator" value="+" onclick="btnClick(value)"><span>+</span></button>
+                <!-- cleid="sham" ar fuction is called here -->
+                <button id="sham" class="btn clear" value="C" onclick="clean()"><span>C</span></button>
+                <button id="sham" class="btn number" value="0" onclick="btnClick(value)"><span>0</span></button>
+                <!-- resid="sham" ult eval() called indirectly to evaluate result -->
+                <button id="sham" class="btn number" value="=" onclick="result()"><span>=</span></button>
+                <button id="sham" class="btn operator" value="-" onclick="btnClick(value)"><span>-</span></button>
         </div>
     </div>
     <script src="javascript.js"></script>

@@ -97,3 +97,35 @@ button {
 button:hover{
     border: 3px solid yellow;
 }
+
+.btn {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  
+  }
+  
+  .btn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    top: -50%;
+    left: -50;
+    height: 0px;
+    width: 0px;
+  
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 1s, height 1s;
+  }
+  
+  .btn:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  

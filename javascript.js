@@ -13,3 +13,9 @@ function result(){//when '=' clicked
 function clean(){//when 'c' clicked
     screen.value="";
 }
+
+
+// selecting the selector with help of class(or we can by id)
+let bunch=document.querySelector(".btn");
+
+
