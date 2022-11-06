@@ -35,6 +35,9 @@ function red(){
 
 function clean(){//when 'c' clicked
     screen.value="";
+    bgColor.style.setProperty("--r",257);
+    bgColor.style.setProperty("--g",257);
+    bgColor.style.setProperty("--b",257);
 }
 
 
