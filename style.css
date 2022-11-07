@@ -13,7 +13,7 @@
 }
 #whole{
     background-color: rgb(var(--r), var(--g), var(--b));
-    /* background-color: gre; */
+    /* background-color: white; */
 }
 .container{
     width: 361px;
@@ -28,7 +28,8 @@
     padding: 0;
     background-color: rgb(39, 39, 39);
     
-    box-shadow: 0 0 25px 25px rgba(0, 0, 0, .25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .30);
+    margin-bottom: 20px;
     /* not to touch the top of the screen */
     margin-top: 30px;
 }

@@ -7,15 +7,44 @@ function btnClick(val){//only for when numbers clicked
 }
 
 function result(){//when '=' clicked
-        screen.value=eval(screen.value);
+        try{    
+            if(screen.value=="")
+                return;
+            screen.value=eval(screen.value);
+            if(screen.value==undefined || screen.value=="")
+                red();
+        }
+        catch(e){
+            red();
+            return;
+        }
+        if(isFinite(screen.value))
+            green();
+        else
+            red();
 }
 
+function white(){
+    bgColor.style.setProperty("--r",255);
+    bgColor.style.setProperty("--g",255);
+    bgColor.style.setProperty("--b",255);
+}
+
+function red(){
+    bgColor.style.setProperty("--r",255);
+    bgColor.style.setProperty("--g",0);
+    bgColor.style.setProperty("--b",0);
+}
+
+function green(){
+    bgColor.style.setProperty("--r",0);
+    bgColor.style.setProperty("--g",225);
+    bgColor.style.setProperty("--b",0);
+}
 
 function clean(){//when 'c' clicked
     screen.value="";
-    bgColor.style.setProperty("--r",257);
-    bgColor.style.setProperty("--g",257);
-    bgColor.style.setProperty("--b",257);
+    white();
 }
 
 
