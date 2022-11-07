@@ -86,6 +86,9 @@ button {
     align-items: center;
     cursor: pointer;
 }
+.mul{
+    padding-top: 10px;
+}
 /* for all numbers on calci */
 .number{
     background-color: rgb(85, 81, 81);
@@ -115,12 +118,13 @@ button:hover{
     z-index: 1;
   }
   
+
   .btn::before {
     content: "";
     position: absolute;
-    background-color: orangered;
+    background-color: rgb(232, 222, 222);
     top: -50%;
-    left: -50;
+    left: -50%;
     height: 0px;
     width: 0px;
   
@@ -129,6 +133,16 @@ button:hover{
     transition: width 1s, height 1s;
   }
   
+  .clear::before{
+    background-color: orangered;
+  }
+  .operator::before{
+    background-color: rgb(128, 190, 248);
+  }
+  .equal::before{
+    background-color: rgb(27, 205, 221);
+  }
+
   .btn:hover::before {
     width: 300px;
     height: 300px;
